@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<head>
+<title>
+    FACI FORM
+</title> 
+</head>
+<body>
+
+
+        <form name="myform" onsubmit="required()" action="Register.php" method="post" target="_blank">
+            <br>
+            <fieldset>
+
+            <legend><strong>Login Information</strong> </legend>
+            <label for="email"> <strong> Email:</strong></label> <br>
+            <input type="email" name="email" id="email" placeholder="Ahmed@gmail.com" required style="border-radius: 5px"> <br>
+            <label for="pas" ><strong>Password:</strong> </label> <br>
+            <input type="password" name="pas" id="pas" max="12" min="6" style="border-radius: 5px" required> <br>         
+            </fieldset>
+            <br> <br>
+           <fieldset>
+            <legend> <strong>Student Information</strong> </legend>
+            <label for="Fname" > <strong>First Name:</strong> </label> <br>
+           <input type="text" name="Fname" id="Fname" style="border-radius: 5px"> <br>
+            <label for="Lname"> <strong>Last Name:</strong> </label> <br>
+            <input type="text" name="Lname" id="Lname" style="border-radius: 5px"required   > <br>
+               
+            <label for="id"><strong>ID</strong></label> <br>
+            <input type="text" name="id" id="id" style="border-radius: 5px" required maxlength="9"> <br> 
+            <label for="phone"><strong>Phone Number</strong></label> <br>
+            <input type="tel" name="phone" id="phone" style="border-radius: 5px" maxlength="11"> <br>
+            <label for="date"><strong>Date of birth </strong></label> <br>
+            <input type="date" name="date" id="date" style="width: 11%;" style="border-radius: 5px"> <br>
+            <label for="Gender"><strong>Gender</strong></label> <br>
+
+            <input type="radio" name="Gender" id="Female" value="Female">
+            <label for="Gender"><strong>Female</strong></label> <br>
+            <input type="radio" name="Gender" id="Male" value="male">
+            <label for="Gender"><strong>Male</strong></label> <br>
+            <br>
+            <label for="gpa" > <strong>Enter GPA</strong> </label> 
+           <input type="text" name="gpa" id="gpa" style="border-radius: 5px">
+        
+           
+            <br> <br> 
+            <label for="dept"> <strong>Department:      </strong></label>
+            <select name="dept" id="dept" style="border-radius: 5px">
+                <optgroup label="General">
+              <option value="ai"><strong>AI </strong></option>
+                    <option value="CS"><strong>CS</strong></option>
+                    <option value="ds"><strong>DS</strong></option>
+                    <option value="it"><strong>IT</strong></option> 
+                    <option value="is"><strong>IS</strong></option> <br>
+                </optgroup>
+                <optgroup label="Credit">
+                    <option value="bio"><strong>BIO</strong></option>
+                          <option value="sw"><strong>Software</strong></option>
+                          <option value="ntw"><strong>Networks</strong></option>
+                          <option value="sec"><strong>Cyber Security</strong></option> 
+                          <option value="Data "><strong>Data Scince</strong></option> <br>
+                      </optgroup>
+ 
+                      <br>
+           </select> <br>
+           <br>
+           <label for="level"> <strong>Level :</strong> </label>
+           <input list="levels" name="level" id="level" style="border-radius: 5px">
+           
+           <datalist id="levels" >
+             <option value="Level">
+             <option value="Level2">
+             <option value="Level3">
+             <option value="Level4">
+           </datalist> 
+            <br>
+                   </fieldset>
+           <br><br>
+           <fieldset>
+           <legend> <strong>Courses</strong> </legend>
+          
+            <input type="checkbox" name="course1" id="course1" >
+            <label for="course1"> Algorithms</label><br>
+            <input type="checkbox" name="course2" id="course2" >
+            <label for="course2"> Machine Learning</label><br>
+
+            <input type="checkbox" name="course3" id="course3" >
+            <label for="course3"> Software Engineering</label><br>
+            <input type="checkbox" name="course4" id="course4" >
+            <label for="course4">Artificial Intelligence</label><br>
+            <input type="checkbox" name="course5" id="course5" >
+            <label for="course5">Discrete Math</label><br>
+            <input type="checkbox" name="course6" id="course6" >
+            <label for="course6">Logic Desing</label><br>
+         
+            <input type="checkbox" name="course7" id="course7" >
+            <label for="course7">Genatics Algorithms</label><br>
+            <input type="checkbox" name="course8" id="course8" >
+            <label for="course8">Graphics</label><br>
+            <input type="checkbox" name="course9" id="course9" >
+            <label for="course9">Networks</label><br>
+            <input type="checkbox" name="course10" id="course10" >
+            <label for="course10">Bioserver</label><br>
+            <input type="checkbox" name="course11" id="course11" >
+            <label for="course11">Genomics Data Analysis</label><br>
+            <input type="checkbox" name="course12" id="course12" >
+            <label for="course12">Computer Archtiture</label><br>
+            <input type="checkbox" name="course13" id="course13" >
+            <label for="course13">Managment</label><br>
+            <input type="checkbox" name="course14" id="course14" >
+            <label for="course14">Math-1</label><br>
+
+            <br></fieldset>
+            <br><br>
+            <fieldset>
+                <legend> <strong> Student Survey</strong></legend>
+                <br>
+                <label for="q1"> <strong><i>Why do you choose this department ?</i></strong></label><br>
+                <input type="text" name="q1" id="q1" width="30%" style="border-radius: 5px";> <br>
+                <br>
+                <label for="choice1"> <strong><i>Will you recommend this faculty for others?</i></strong></label> <br>
+                <input type="radio" name="choice1"  value="YES">
+                <label for="Gender">YES</label> 
+                 <br>
+                <input type="radio" name="choice1"  value="NO"> 
+                <label for="Gender">NO</label> <br>
+                 <br>
+                <label for="q2"> <strong><i>How satisfied are you with the teaching staff?</i></strong></label> <br>
+                <input list="q" name="q2" id="q2" style="border-radius: 5px"> <br>
+                <datalist id="q">
+                    <option value="Excellent"></option>
+                    <option value="Very Good"></option>
+                    <option value="Good"></option>
+                    <option value="Fair"></option>
+                    <option value="Poor"></option>
+
+                       </datalist> <br>
+                       <label for="choice2" > <strong><i>Do you feel this faculty is preparing you for the jop market ?</i></strong></label> <br>
+                       <input type="radio" name="choice2"  value="YES">
+                       <label for="Gender">YES</label> 
+                        <br>
+                       <input type="radio" name="choice2"  value="NO"> 
+                       <label for="Gender">NO</label> <br> <br>
+                        <label for="q4"> <strong><i>What is the most courses do you like and why  ?</i></strong></label> <br>
+                        <input type="text" name="q4" id="q4" style="border-radius: 5px" > <br> <br>
+                        <label for="q5"> <strong><i>What is the least courses do you like and why  ?</i></strong></label> <br> 
+                        <input type="text" name="q5" id="q5" style="border-radius: 5px" > <br> <br>
+                        <label for="q6"> <strong><i>do you have any negative comments about any course you took   ?</i></strong></label> <br>
+
+
+
+                        <input type="radio" name="q6"  value="YES">
+                        <label for="Gender">YES</label> 
+                         <br>
+                        <input type="radio" name="q6"  value="NO"> 
+                        <label for="Gender">NO</label> <br> 
+
+                        <label for="q7"> <strong><i> if yes, how to improve them ? </i></strong></label> <br>
+                        <input type="text" name="q7" id="q7" style="border-radius: 5px"  > <br> <br>
+
+                        <label for="q7"> <strong><i>Any recommendation to add new courses ?</i></strong></label> <br>
+                        <input type="text" name="q7" id="q7" style="border-radius: 5px" > <br>
+
+                        <!--
+                         <input type="button" onclick="alret (submit ) " value="alret" > 
+
+                        -->    
+   
+            </fieldset>
+            <br> 
+            <center>
+                <input type="submit" value="Submit" name="submit_btn" id="submit_btn" style="background-color: black; color:aliceblue; border-radius: 12px ; width: 15%; height: 0.9cm;">
+
+                <input type="reset" value="Reset" name="reset_btn" id="reset_btn" style="background-color: grey; color: black; border-radius: 12px; width: 15%; height: 0.9cm;">
+
+
+            </center>
+        </form>
+        <script>
+function required()
+{
+
+
+    var letter=document.forms["myform"]["Fname"].value;
+    console.log(letter);
+
+    if (letter=="")
+    {
+        alert("Can't be empty , Must be filled out");
+        return false;
+    }
+    else if(letter.length>15)
+    {
+        alert("too much characters");
+        return false;
+    }
+}
+
+
+
+
+        </script>
+    <style>
+        body
+        {
+
+
+            background: url("background.jpg") no-repeat;
+            background-size: cover;
+
+
+        }
+
+
+    img {
+        background-image: url("background.jpg");
+        background-size: contain;
+        opacity: 1;
+        padding: 1px;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        position: relative; 
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+    </style>
+</body>
+</html>

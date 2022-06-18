@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GPA CALCULATOR</title>
+  </head>
+  <body bgcolor="344e6c">
+    <table
+      id="myTable"
+      bgcolor="#D5D8DC"
+      border="3"
+      style="margin-right: auto; margin-left: auto; width: 275px; height: 275px"
+    >
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <caption style="font-size: 30px">
+        <i><b> GPA CALCULATOR </b></i>
+        <br />
+        <br />
+      </caption>
+
+      <tr>
+        <th>Course Name</th>
+        <th> Degree</th>
+        <th> Grade</th>
+      </tr>
+      <tr>
+        <td><input type="text" id="course1" /></td>
+        <td><input type="number" id="degree1" /></td>
+        <td>
+          <form>
+            <select id="mySelect" style="width: 80px">
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>D+</option>
+              <option>D</option>
+            </select>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="text" id="course2" /></td>
+        <td><input type="number" id="degree2" /></td>
+        <td>
+          <form>
+            <select id="mySelect" style="width: 80px">
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>D+</option>
+              <option>D</option>
+            </select>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="text" id="course3" /></td>
+        <td><input type="number" id="degree3" /></td>
+        <td>
+          <form>
+            <select id="mySelect" style="width: 80px">
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>D+</option>
+              <option>D</option>
+            </select>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="text" id="course4" /></td>
+        <td><input type="number" id="degree4" /></td>
+        <td>
+          <form>
+            <select id="mySelect" style="width: 80px">
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>D+</option>
+              <option>D</option>
+            </select>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="text" id="course5" /></td>
+        <td><input type="number" id="degree5" /></td>
+        <td>
+          <form>
+            <select id="mySelect" style="width: 80px">
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>D+</option>
+              <option>D</option>
+            </select>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="text" id="course6" /></td>
+        <td><input type="number" id="degree6" /></td>
+        <td>
+          <form>
+            <select id="mySelect" style="width: 80px">
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>D+</option>
+              <option>D</option>
+            </select>
+          </form>
+        </td>
+      </tr>
+    </table>
+    <br />
+    <button
+      style="margin: right 750px; margin-left: 750px"
+      bgcolor="#D5D8DC size:30px"
+      type="button"
+      onclick="calc()"
+    >
+      <b> Calulate</b>
+    </button>
+    <button
+    style="margin: right 750px; margin-left: 750px"
+    bgcolor="#D5D8DC size:30px"
+    type="button"
+    onclick="create_tr()"
+  >
+    <b> add</b>
+  </button>
+    <p style="margin: right 760px; margin-left: 760px; color: black">
+      <b>GPA=</b>
+    </p>
+    <p id="result" style="margin: right 760px; margin-left: 760px"></p>
+  
+    <br />
+
+    <script>
+      var GPA;
+      var qp = 0;
+      var Courses = [];
+      var degree = [];
+      var point = [];
+      var hours = 3;
+      function calc() {
+        for (k = 0; k < 3; k++) {
+          var subjets = document.getElementById("course" + (k + 1)).value;
+          Courses[k] = subjets;
+          var points = document.getElementById("degree" + (k + 1)).value;
+          degree[k] = points;
+        }
+        var len = degree.length;
+
+        for (i = 0; i < len; i++) {
+          if (Number(degree[i]) >= 90) {
+            point[i] = 4;
+          } else if (Number(degree[i]) < 90 && Number(degree[i]) >= 85) {
+            point[i] = 3.7;
+          } else if (Number(degree[i]) < 85 && Number(degree[i]) >= 80) {
+            point[i] = 3.3;
+          } else if (degree[i] < 80 && degree[i] >= 75) {
+            point[i] = 3;
+          } else if (degree[i] < 75 && degree[i] >= 70) {
+            point[i] = 2.7;
+          } else if (degree[i] < 70 && degree[i] >= 65) {
+            point[i] = 2.4;
+          } else if (degree[i] < 65 && degree[i] >= 60) {
+            point[i] = 2.2;
+          } else if (degree[i] < 60 && degree[i] >= 50) {
+            point[i] = 2.0;
+          } else if (Number(degree[i]) < 50) {
+            point[i] = 0;
+          }
+        }
+
+        for (j = 0; j < len; j++) {
+          qp += hours * point[j];
+        }
+
+        var totalhours = 9;
+        GPA = (qp / totalhours).toFixed(3);
+        document.getElementById("result").innerHTML = GPA;
+      }
+
+
+      function create_tr(table_id) {
+    let myTable = document.getElementById(table_id),
+        first_tr   = myTable.firstElementChild
+        tr_clone   = first_tr.cloneNode(true);
+    myTable.append(tr_clone);
+    clean_first_tr(myTable.firstElementChild);
+}
+/*function clean_first_tr(firstTr) {
+    let children = firstTr.children;
+    
+    children = Array.isArray(children) ? children : Object.values(children);
+    children.forEach(x=>{
+        if(x !== firstTr.lastElementChild)
+        {
+            x.firstElementChild.value = '';
+        }
+    });
+}
+function remove_tr(This) {
+    if(This.closest('tbody').childElementCount == 1)
+    {
+        alert("You Don't have Permission to Delete This ?");
+    }else{
+        This.closest('tr').remove();
+    }
+}*/
+    </script>
+  </body>
+</html>

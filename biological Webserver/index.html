@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Main Page</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="section1">
+      <br />
+
+      <h1>Welcome To The World Of Micro-Organisms</h1>
+
+      <img src="logo.png" class="logo" />
+    </div>
+    <br />
+
+    <div class="section2">
+      <br /><br />
+      <form action="search.php" target="_self" method="post">
+        <select name="list" id="list" class="select">
+          <option value="virus">Virus</option>
+          <option value="bacteria">Bacteria</option>
+          <option value="archea">Archea</option>
+
+          <input type="text" name="query" class="bar"/>
+          <input type="submit" value="Search" class="button" />
+        </select>
+      </form>
+    </div>
+
+    <br /><br />
+
+    <div class="section3">
+      <form action="tools.php" target="_self">
+        <img src="dna.png" class="sequence" /> <br /><br /><br />
+        <input type="submit" value="Go Tools" class="tools" />
+      </form>
+      <br />
+    </div>
+
+    <form action="browseAll.php" target="_self">
+      <div class="section4">
+        <img src="search.png" class="search" />
+        <input type="submit" value="Display" class="display" />
+      </div>
+    </form>
+
+    <form action="manage.php" target="_self">
+      <div class="section5">
+        <img src="database.png" class="database" />
+        <input type="submit" value="Manage" class="insert" />
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+.section1 {
+  background-color: rgb(54, 54, 117);
+  height: 15%;
+  text-align: center;
+  font-size: small;
+  color: white;
+}
+.section2 {
+  background-color: rgb(189, 196, 202);
+  color: black;
+  height: 15%;
+}
+.select {
+  height: 25px;
+  width: 5%;
+  margin-left: 6%;
+}
+.bar {
+  width: 80%;
+  height: 25px;
+}
+.button {
+  border-radius: 4px;
+  background-color: rgb(54, 54, 117);
+  color: white;
+}
+.logo {
+  position: relative;
+  right: 650px;
+  bottom: 85px;
+  width: 200px;
+  height: 100px;
+}
+
+.sequence
+{
+  position: relative;
+  top:40px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  transform: rotateY(50deg);
+  animation: rotateAnimation 1s linear infinite;
+  mix-blend-mode: multiply;
+  
+}
+.database
+{
+  position: relative;
+  bottom: 500px;
+  left: 1100px;
+  width: 200px;
+  height: 200px;
+  transform: rotateY(45deg);
+    animation: rotateAnimation 1s linear infinite;
+
+}
+.display
+{ 
+  position: relative;
+  bottom: 200px;
+  left: 440px;
+  background-color: rgb(54, 54, 117);
+  color: white;
+  padding: 15px 32px;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  cursor:pointer;
+  border-radius: 4px;
+  
+}
+.display:hover
+{
+  background-color: #4c63af;
+  color: white;
+}
+.search
+{ 
+  position: relative;
+  bottom: 260px;
+  left: 600px;
+  width: 200px;
+  height: 200px;
+  transform: rotateY(45deg);
+    animation: rotateAnimation 1s linear infinite
+
+}
+.insert
+{
+  position: relative;
+  bottom: 440px;
+  left: 950px;
+  background-color: rgb(54, 54, 117);
+  color: white;
+  padding: 15px 32px;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  cursor:pointer;
+  border-radius: 4px;
+}
+.insert:hover
+{
+  background-color: #4c63af;
+  color: white;
+
+}
+.tools
+{
+  position: relative;
+  top: 40px;
+  left: 150px;
+  background-color: rgb(54, 54, 117);
+  color: white;
+  padding: 15px 32px;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  cursor:pointer;
+  border-radius: 4px;
+}
+
+.tools:hover
+{
+  background-color: #4c63af;
+  color: white;
+
+}
+@keyframes rotateAnimation 
+{
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(180deg);}
+}
+.section1_tool
+{
+  background-color: rgb(54, 54, 117);
+  height: 100px;
+  text-align: center;
+  font-size: small;
+  color: white;
+}
+.button_tool
+{
+  position: relative;  
+  background-color: rgb(54, 54, 117);
+  color: white;
+  padding: 15px 32px;
+  font-size: 20px;
+  cursor:pointer;
+  border-radius: 12px;
+  left:150px;
+  margin-left:30px;
+}
+
+.sequence_tool
+{
+  position: relative;  
+  top:20px;
+  left: 20px;
+  width: 150px;
+  height: 100px;
+  transform: rotateY(50deg);
+  animation: rotateAnimation 1s linear infinite;
+  mix-blend-mode: multiply;
+}
+.label_tool
+{
+    position: relative;
+    bottom:100px;
+    left:150px;
+    width:300px;
+    color: rgb(62,70,143);
+    font-size: x-large;
+    font-weight: bold;
+}
+.select_tool
+{
+    position: relative;
+    bottom:100px;
+    left:150px;
+    width:270px;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(54, 54, 117);
+    color: white;
+    padding: 5px 20px;
+    font-size: 20px;
+    cursor:pointer;
+    border-radius: 4px;
+}
+.result_tool
+{
+  position: relative;
+  color:rgba(6, 17, 137, 0.838);
+  font-size: 40px;
+  font-weight: bold;
+  border:10px;
+  top:70px;
+  left:30px;
+}
